@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Indie+Flower|Lekton|Nothing+You+Could+Do|Sacramento&display=swap');
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*----------------------------navbar----------------------------*/
+#navbar {
+  text-align: right;
+  line-height: 60px;
+  background-color:#111415;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:4000;
+}
+header {
+  margin-bottom: 60px;
+}
+
+#navbar a{
+  text-decoration:none;
+
+}
+#logo{
+ position:absolute;
+ display:inline;
+ left:40px;
+ line-height:60px;
+}
+#logo p{
+  display:inline;
+  font-family:sacramento;
+  font-size:34px;
+  color:#cc4933;
+  font-weight:bold;
+}
+
+#toggle {
+  display: none;
+  line-height: 60px;
+}
+#navbar label{
+  padding-right:20px;
+  line-height:60px;
+  font-size:25px;
+  font-weight:bold;
+  display:none;
+}
+#menu{
+  margin-right:30px;
+        border-top:1px solid grey;
+
+}
+#menu a{
+  padding:10px 15px;
+  line-height:60px;
+  font-family:sans-serif;
+  color:floralwhite;
+  border-radius:20px;
+}
+#menu a:hover{
+  background-color:dimgrey;
+}
+#logo{
+  display:inline;
+  position:absolute;
+  left:50px;
+  line-height:60px;
+}
+#logo i{
+  color:grey;
+  font-size:45px;
+  line-height:60px;
+}
+#logo p{
+  display:inline;
+  font-family:sacramento;
+  font-size:34px;
+  color:#cc4933;
+  font-weight:bold;
+}
+@media(max-width:680px){
+  #logo{
+    left:20px;
+  }
+  #navbar label {
+      display:block;
+      color:white;
+      cursor:pointer;
+      
+  }
+  #menu{
+      text-align:center;
+      margin:0;
+      left: 100vw;
+      display: block;
+      position: fixed;
+      width: 100%;
+      transition: 0.7s;
+      background-color:#111415;
+     
+  }
+  #menu a{
+  display:block; 
+  border-color:grey;
+  border-radius:0px;
+  line-height:30px;
+  }
+  #toggle:checked + #menu{
+      left:0;
+
+  }
+
+}
+/*-------------------------Intro---------------------------*/
+#intro{
+text-align:left;
+background:linear-gradient(to bottom,rgba(0, 0, 0, 0.8)10%,rgba(0, 0, 0, 0.8)19%,rgba(0, 0, 0, 0.8)25% ,rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 55%, rgba(0, 0, 0, 0.8) 70%),url("/images/soft.jpg") no-repeat;
+background-position-y: top;
+background-position-x: center;
+background-size:contain;
+background-attachment:fixed;
+height:85vh;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+#intro-text{
+margin-left:20px;
+}
+#intro h1{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color:white;
+font-size:32px;
+}
+#intro p{
+  font-family: Courier, monospace;
+  color:rgba(248, 239, 231, 0.966);
+  font-size:18px;
+  line-height: 20px;
+max-width:500px;
+padding-top: 20px;
+}
+#intro span{
+  font-weight: bolder;
+  color: rgb(147, 197, 209);
+}
+@media(max-width:600px){
+
+#intro{
+align-items: flex-end;
+justify-content: flex-end;
+background-size: cover;
+height:60vh;
+}}
+
+/*-------------------------About me---------------------------*/
+.projects h1{
+  font-family: Courier, monospace;
+
+}
+.projects h1{
+    font-size:35px !important;
+    font-weight: bolder
+    ;
+
+}
+.projects img{
+max-height: 250px;;
+}
+
+
+/*-------------------------footer---------------------------*/
+footer{
+  width:100%;
+  background-color:black;
+}
+#icons{
+  text-align:center;
+  padding-top:10px;
+  
+}
+#icons a {
+      color: cadetblue;
+      font-size: 30px;
+      border-radius: 50%;
+      margin: 0px 10px;
+      padding: 0px 12px;
+}
+#icons a:hover{
+  color:lightblue;
+}
+#footer-menu {
+  text-align: center;
+  padding:10px;
+  font-family: 'Poiret One';
+}
+#footer-menu a {
+      color: white;
+}
+#footer-menu a:hover{
+ color:dimgray;
+}
+.footer{
+  font-size:15px;
+  background-color:lightgrey;
+  text-align:center;
+  font-family:Arial;
+  padding:5px;
+}
