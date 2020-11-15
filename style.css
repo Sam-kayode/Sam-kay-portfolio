@@ -4,6 +4,8 @@ html, body {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  transition:0.5s;
+  background-color: rgb(229, 230, 233);
 }
 /*----------------------------navbar----------------------------*/
 #navbar {
@@ -158,12 +160,33 @@ height:60vh;
 }}
 
 /*-------------------------About me---------------------------*/
-.projects h1{
-  font-family: Courier, monospace;
+.about{
+background-color:white;
+width:90vw;
+border-radius:15px;
+font-size:20px;
+}
+
+.about h1{
+  font-family:sans-serif;
+  font-size:30px !important;
+  font-weight: bolder
+  ;
+}
+
+.projects{
+  font-size:16px;
+  background-color:white;
+  width:90vw;
+  border-radius:15px;
 
 }
 .projects h1{
-    font-size:35px !important;
+  font-family:sans-serif;
+
+}
+.projects h1{
+    font-size:30px !important;
     font-weight: bolder
     ;
 
@@ -172,6 +195,10 @@ height:60vh;
 max-height: 250px;;
 }
 
+.card{
+  min-width:250px;
+  max-width:400px;
+}
 
 /*-------------------------footer---------------------------*/
 footer{
@@ -211,3 +238,4 @@ footer{
   font-family:Arial;
   padding:5px;
 }
+

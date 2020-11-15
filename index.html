@@ -15,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Akronim&family=Lobster+Two:wght@700&family=Poiret+One&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3a37d33ed4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,95 +41,165 @@
     </header>
     <!--intro-->
     <div id='intro'>
-        <div id='intro-text'>
-            <h1>Hi, I am Sam-kay M.K</h1>
-            <p>
-                A Front-end Web Developer with knowledge of <span id="innerText">HTML, CSS, JavaScript, Vue
-                    js. </span>
-                </br>With every line of code, I strive to make the Web a beautiful place.</p>
-            </h2>
+        <div id='intro-text' data-aos="fade-up">
+            <div>
+                <h1>Hi, I am Sam-kay M.K</h1>
+                <p>
+                    A Front-end Web Developer with knowledge of <span id="innerText">HTML, CSS, JavaScript, Vue
+                        js. </span>
+                    </br>With every line of code, I strive to make the Web a beautiful place.</p>
+            </div>
         </div>
     </div>
 
+    <!----------------------About--------------------------->
+    <div class="container-fluid p-5 mt-5 mb-4  about " id="about">
+        <div data-aos="zoom-in">
+            <h1 class="text-center mb-4">About me</h1>
+            <p>
+                <strong>Languages:</strong>Javascript, HTML, CSS, Python,</br>
+
+                <strong> Frameworks:</strong>
+                Vue.js, nuxt.js</br>
+                <strong> Librariess:</strong>
+                Bootstrap, Bootstrap-vue, Vuetify</br>
+                <strong> Tools:</strong>
+                Git, Nelify, Cloudinary</br>
+                <strong>Editor Journey:</strong>
+                CodePen, Sublime, VS Code</br></p>
+        </div>
+
+    </div>
+
+
     <!----------------------projects--------------------------->
 
-    <div class="container-fluid p-5 projects " id="projects">
-        <h1 class="text-center">Projects</h1>
-        <div class="card-deck p-2 p-md-5">
-            <div class="card rounded-lg">
+    <div class="container-fluid p-5 projects mt-5 " id="projects">
+        <h1 class="text-center mb-5">Projects</h1>
+
+        <div class=" p-md-5 row">
+            <div class="card col-sm mx-2 my-3" data-aos="fade-right">
+                <a href="https://codepen.io/sam-kay/full/ZEGYLKr"><img
+                        src="https://res.cloudinary.com/sam-kay/image/upload/q_auto/portfolio%20images/calculator_xddyv0.png"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title"> <strong>Neumorphic Calculator</strong>
+                    </h5>
+                    <p class="card-text">A calculator built sing Neumorphism as a source of UI/UX inspiration. It is
+                        able to process basic arithmetic operations. </p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS ,Js, Vue.js</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
+
+                </div>
+            </div>
+            <div class="card col-sm mx-2 my-3" data-aos="fade-left">
+                <a href="https://codepen.io/sam-kay/full/ZEGYLKr"><img
+                        src="https://res.cloudinary.com/sam-kay/image/upload/q_auto/portfolio%20images/weather_wjrltl.png"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title"> <strong>Weather App</strong>
+                    </h5>
+                    <p class="card-text">Weather app that makes use of the powerful OpenWeatherMap API to give updates
+                        on the weather condition of major cities around the globe. </p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS ,Js, Vue.js</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
+
+                </div>
+            </div>
+            <div class="card col-sm rounded-lg mx-2 my-3" data-aos="fade-right">
                 <a href="https://shaba-seo.netlify.app/">
-                    <img src="/images/shaba (2).jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="https://res.cloudinary.com/sam-kay/image/upload/q_auto/portfolio%20images/shaba_czkzji.png"
+                        class="card-img-top img-fluid" alt="...">
                 </a>
                 <div class="card-body">
-                    <h5 class="card-title">Shaba</h5>
+                    <strong></strong>
+                    <h5 class="card-title"> <strong> Shaba</strong>
+                    </h5>
                     <p class="card-text">Ongoing project to develop the front-end of a SEO company website</p>
-                    <p class="card-text text-darker"> Vue Js, HTML, CSS, Bootstrap</p>
-                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a>
+                    <p class="card-text text-darker"><strong>language:</strong> Vue Js, HTML, CSS, Bootstrap</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
                 </div>
 
             </div>
-            <div class="card rounded-lg">
-                <a href="https://sam-kayode.github.io/HTML-Conference/"><img src="/images/html1.jpg"
+            <div class="card rounded-lg col-sm mx-2 my-3" data-aos="fade-left">
+                <a href="https://sam-kayode.github.io/HTML-Conference/"><img
+                        src="https://res.cloudinary.com/sam-kay/image/upload/q_auto/portfolio%20images/conference_kycfrp.png"
                         class="card-img-top img-fluid" alt="..."> </a>
                 <div class="card-body">
-                    <h5 class="card-title">Conference Site</h5>
-                    <p class="card-text">A conference site for participants of an event in Lagos,Nigeria.</p>
-                    <p class="card-text text-darker">HTML, CSS</p>
-                    <a href="https://github.com/Sam-kayode/HTML-Conference">Github Repo</a>
+                    <h5 class="card-title"> <strong> Conference Site</strong>
+                    </h5>
+                    <p class="card-text">A conference site template for participants of an event in Lagos,Nigeria.</p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
+
                 </div>
 
 
             </div>
-            <div class="card rounded-lg">
-                <a href="https://sam-kayode.github.io/Milcheur/#"><img src="/images/milcheur.png" class="card-img-top"
-                        alt="..."></a>
+            <div class="card rounded-lg col-sm mx-2 my-3" data-aos="fade-right">
+                <a href="https://sam-kayode.github.io/Milcheur/#"><img
+                        src="https://res.cloudinary.com/sam-kay/image/upload/q_auto/portfolio%20images/samjunio_lzxbep.png"
+                        class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                    <h5 class="card-title">Milcheur</h5>
-                    <p class="card-text">Simple one-page website template for an online marketing agency
+                    <h5 class="card-title text-strong">
+                        <strong>Photography Porfolio</strong>
+                    </h5>
+                    <p class="card-text">Photographer's portfolio built with the powerful vue.js framework
                     </p>
-                    <p class="card-text text-darker">HTML, CSS, Bootstrap</p>
-                    <a href="https://github.com/Sam-kayode/Milcheur">Github Repo</a>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, JavaScript,CSS, Bootstrap-vue,
+                        vue.Js</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
+                </div>
+            </div>
+            <div class="card col-sm mx-2 my-3" data-aos="fade-left">
+                <a href="https://codepen.io/sam-kay/full/ZEGYLKr"><img src="/images/tribute (2).jpg"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title"> <strong> Tribute page</strong>
+                    </h5>
+                    <p class="card-text">One-page tribute page giving summary of Barak obama </p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS</p>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Github Repo</a> </br>
+                    <a href="https://github.com/Sam-kayode/Shaba-seo">Live demo</a>
 
                 </div>
             </div>
         </div>
-        <div class="card-deck p-2 p-md-5">
+        <!--  <div class="card-deck p-2 p-md-5">
             <div class="card rounded-lg">
                 <a href="https://codepen.io/sam-kay/full/LYVmXZX"> <img src="/images/peod.jpg"
                         class="card-img-top img-fluid" alt="..."></a>
                 <div class="card-body">
-                    <h5 class="card-title">Guitar Landing Page</h5>
+                    <h5 class="card-title">                    <strong>Guitar Landing Page</strong>
+                        </h5>
                     <p class="card-text">A guitar store landing page</p>
-                    <p class="card-text text-darker">HTML, CSS</p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS</p>
                 </div>
 
-            </div>
-            <div class="card">
-                <a href="https://codepen.io/sam-kay/full/ZEGYLKr"><img src="/images/tribute (2).jpg"
-                        class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                    <h5 class="card-title">Tribute page</h5>
-                    <p class="card-text">One-page tribute page giving summary of Barak obama </p>
-                    <p class="card-text text-darker">HTML, CSS</p>
+            </div> -->
 
-                </div>
-            </div>
-            <div class="card">
+        <!-- <div class="card">
                 <a href="https://sam-kayode.github.io/Tours/"><img src="/images/tours (2).jpg" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                    <h5 class="card-title">Travel Page</h5>
+                    <h5 class="card-title">                    <strong> Travel Page</strong>
+                       </h5>
                     <p class="card-text">Single-page website of a Travel Agency giving details of egypt.
                     </p>
-                    <p class="card-text text-darker">HTML, CSS</p>
+                    <p class="card-text text-darker"><strong>language:</strong>HTML, CSS</p>
                     <a href="https://github.com/Sam-kayode/Tours">Github Repo</a>
                 </div>
-            </div>
-        </div>
-        <div class="text-center">
-            <h4 class="text-center">Interested in doing a project together ?</h4>
-            <a href="mailto: marvelloussamkayode@gmail.com"></a><button type="button" class="btn btn-dark">Email
-                me</button></a>
-        </div>
+            </div> -->
+    </div>
+    <div class="text-center">
+        <h4 class="text-center">Interested in doing a project together ?</h4>
+        <a href="mailto: marvelloussamkayode@gmail.com"></a><button type="button" class="btn btn-dark">Email
+            me</button></a>
+    </div>
 
     </div>
 
@@ -148,6 +219,7 @@
             <p class="footer">Copyright&copy; 2020 MARV. All rights reserved</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -157,6 +229,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 
 
 </body>
