@@ -1,6 +1,6 @@
 $(function(){
   AOS.init({
 easing:'ease',
-duration:800, 
+duration:700, 
   });
 });
