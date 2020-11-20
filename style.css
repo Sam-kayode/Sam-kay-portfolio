@@ -159,10 +159,21 @@ background-size: cover;
 height:60vh;
 }}
 
+.icons {
+  width: 35px;
+  margin: 0px 2px 0px 2px;
+  padding: 0;
+  color: #73bfd8;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+  color: #07526b;
+}
+
 /*-------------------------About me---------------------------*/
 .about{
 background-color:white;
-width:90vw;
 border-radius:15px;
 font-size:20px;
 }
@@ -177,7 +188,7 @@ font-size:20px;
 .projects{
   font-size:16px;
   background-color:white;
-  width:90vw;
+  width:100%;
   border-radius:15px;
 
 }
@@ -196,9 +207,16 @@ max-height: 250px;;
 }
 
 .card{
-  min-width:250px;
-  max-width:400px;
+  min-width:230px;
+  max-width:250px;
 }
+
+
+.locate, .skills, .projects, .Work-Experience, .Education, .languages {
+  background: rgb(255, 255, 255);
+
+}
+
 
 /*-------------------------footer---------------------------*/
 footer{
@@ -239,3 +257,16 @@ footer{
   padding:5px;
 }
 
+.checked{
+  color:orange;
+}
+@media(max-width:700px){
+  .row1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+    }
+}
