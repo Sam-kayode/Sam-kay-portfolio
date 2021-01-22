@@ -192,6 +192,10 @@ font-size:20px;
   border-radius:15px;
 
 }
+
+.card{
+  background-color: rgb(229, 230, 233);
+}
 .projects h1{
   font-family:sans-serif;
 
